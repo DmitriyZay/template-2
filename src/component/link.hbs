@@ -1,0 +1,25 @@
+{{!-- <a href="{{href}}"> {{text}}</a>/ --}}
+{{!-- {{#with data}} --}}
+
+{{!-- {{/with}} --}}
+
+
+<a href="{{href}}" 
+
+{{!-- додавання умови по параметру target --}}
+{{#if blank}}
+target="_blank"
+{{/if}}> 
+
+
+{{text}}</a>
+
+
+{{#unless noLine}}
+{{#if line}}
+---
+{{else}}
+/
+{{/if}}
+
+{{/unless}}
