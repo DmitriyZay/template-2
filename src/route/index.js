@@ -263,7 +263,7 @@ router.get('/bio', function (req, res) {
       {
         title:
           'Does the Inertia of a Body Depend Upon Its Energy Content?',
-        year: 1905,
+        year: 1906,
         publisher: 'Annalen der Physik',
       },
     ],
