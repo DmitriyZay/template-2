@@ -251,6 +251,7 @@ router.get('/person', function (req, res) {
             'Massachusetts Institute of Technology',
           graduationYear: 2012,
         },
+      
       ],
       workExperience: [
         {
