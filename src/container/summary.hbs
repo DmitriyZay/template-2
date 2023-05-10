@@ -1,10 +1,10 @@
-{{!-- 
-Це код container файлу для summary сторінки, 
+{{!--
+Це код container файлу для summary сторінки,
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/summary"
 --}}
 
 <div>
-{{#with main}}
+    {{#with main}}
 
     <main>
         <section>
@@ -19,7 +19,7 @@
         <section>
             <div>
                 {{!-- <h2>{{title}}</h2> --}}
-            {{>title data=title big=false}}
+                {{>title data=title big=false}}
             </div>
             <div>
                 <p>
@@ -29,7 +29,7 @@
         </section>
         {{/with}}
     </main>
-{{!-- стандарний код --}}
+    {{!-- стандарний код --}}
     {{!-- <footer>
         <hr>
         <br>
@@ -39,37 +39,37 @@
     </footer> --}}
 
 
-{{!-- ------приклад для тега #with----- --}}
+    {{!-- ------приклад для тега #with----- --}}
     {{!-- <footer>
         <hr>
         <br>
         {{#with social}} --}}
-           {{!-- {{#with email}} --}}
-             {{!-- <a href="{{href}}"> {{text}}</a> / --}}
-          
-          {{!-- якщо без #with, то треба точнго прописсувати шлях до змінних --}}
-          {{!-- приклад {{>link href=email.href text=email.text}} --}}
-          {{!-- якщо назви змінних різні, то треба їх іжентифікувати --}}
-           {{!-- {{>link link=href info=text}} --}}
-          
-           {{!-- {{>link }}
-           {{/with}}
-           {{#with phone}}
-           {{>link }}
-           {{/with}}
-           {{#with linkedin}}
-           {{>link }}
-           {{/with}} --}}
+        {{!-- {{#with email}} --}}
+        {{!-- <a href="{{href}}"> {{text}}</a> / --}}
 
-           {{!-- {{>link data=email}}
-           {{>link data=phone}}
-           {{>link data=linkedin}}
+        {{!-- якщо без #with, то треба точнго прописсувати шлях до змінних --}}
+        {{!-- приклад {{>link href=email.href text=email.text}} --}}
+        {{!-- якщо назви змінних різні, то треба їх іжентифікувати --}}
+        {{!-- {{>link link=href info=text}} --}}
+
+        {{!-- {{>link }}
+        {{/with}}
+        {{#with phone}}
+        {{>link }}
+        {{/with}}
+        {{#with linkedin}}
+        {{>link }}
+        {{/with}} --}}
+
+        {{!-- {{>link data=email}}
+        {{>link data=phone}}
+        {{>link data=linkedin}}
         {{/with}}
     </footer> --}}
-{{/with}}
+    {{/with}}
 </div>
 
-{{!-- 
-    Цей код містить лише те, що буде виводитись в {{{body}}} в layout/default.hbs
-    Адже наш layout/default.hbs має вже структуру HTML
+{{!--
+Цей код містить лише те, що буде виводитись в {{{body}}} в layout/default.hbs
+Адже наш layout/default.hbs має вже структуру HTML
 --}}
