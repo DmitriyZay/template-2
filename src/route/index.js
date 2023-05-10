@@ -59,6 +59,18 @@ router.get('/bootstrap', function (req, res) {
 })
 
 // ================================================================
+//           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/bootstrap-card', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('bootstrap_card', {
+    layout:'bootstrap',
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
+
+// ================================================================
 
 //              ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/summary', function (req, res) {
