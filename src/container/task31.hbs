@@ -211,35 +211,66 @@
 
 
 
-<section>
-  <div class="row g-2">
-    {{#with footer}}
-    <div class="col-12">
-      <h1 class="display-2">{{title}} </h1>
+  <section>
+    <div class="row g-2">
+      {{#with footer}}
+      <div class="col-12">
+        <h1 class="display-2">{{title}} </h1>
+      </div>
+      <section class="row g-4">
+        <div class="col-3  ">
+          {{#each navigation}}
+          <p> <a href="{{href}}" class="btn btn-link">{{text}}</a></p>
+          {{/each}}
+        </div>
+        <div class="col-3  ">
+          {{#each socialMedia}}
+          <p> <a href="{{link}}" class="btn btn-outline-dark">{{name}}</a></p>
+          {{/each}}
+        </div>
+        <div class="col-3 ">
+          {{#each partners}}
+          <p> <a href="{{link}}" class="btn btn-outline-info">{{name}}</a></p>
+          {{/each}}
+        </div>
+      </section>
+      {{/with}}
     </div>
-    <section class="row g-4">
-      <div class="col-3  ">
+  </section>
+
+  <footer>
+    {{#with footer}}
+    <h5>{{title}}</h5>
+    <div class="row g-2">
+
+      <div class="col-4 list-group card">
         {{#each navigation}}
-        <p> <a href="{{href}}" class="btn btn-link">{{text}}</a></p>
+        <a href="{{href}}" class="list-item" target="_blank">
+          <button class="btn btn-link">{{text}}</button>
+        </a>
+        <br>
         {{/each}}
-      </div>
-      <div class="col-3  ">
+     </div>
+      <div class="col-4 list-group card">
         {{#each socialMedia}}
-        <p> <a href="{{link}}" class="btn btn-outline-dark">{{name}}</a></p>
+        <a href="{{link}}" class="list-item" target="_blank">
+          <button class="btn btn-outline-dark">{{name}}</button>
+        </a>
+        <br>
         {{/each}}
       </div>
-      <div class="col-3 ">
+      <div class="col-4 list-group ">
         {{#each partners}}
-        <p> <a href="{{link}}" class="btn btn-outline-info">{{name}}</a></p>
+        <a href="{{link}}" class="list-item" target="_blank">
+          <button class="btn btn-outline-info">{{name}}</button>
+        </a>
+        <br>
         {{/each}}
       </div>
-    </section>
+    </div>
     {{/with}}
-  </div>
-</section>
+  </footer>
 
-
- 
 
 
 </main>
