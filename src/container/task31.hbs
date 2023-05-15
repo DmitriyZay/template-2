@@ -1,4 +1,4 @@
-<main>
+<main class="p-5">
   <section>
     <div class="row gx-1">
       {{#with navigation}}
@@ -218,17 +218,17 @@
         <h1 class="display-2">{{title}} </h1>
       </div>
       <section class="row g-4">
-        <div class="col-3  ">
+        <div class="col-4  ">
           {{#each navigation}}
           <p> <a href="{{href}}" class="btn btn-link">{{text}}</a></p>
           {{/each}}
         </div>
-        <div class="col-3  ">
+        <div class="col-4  ">
           {{#each socialMedia}}
           <p> <a href="{{link}}" class="btn btn-outline-dark">{{name}}</a></p>
           {{/each}}
         </div>
-        <div class="col-3 ">
+        <div class="col-4 ">
           {{#each partners}}
           <p> <a href="{{link}}" class="btn btn-outline-info">{{name}}</a></p>
           {{/each}}
