@@ -31,10 +31,9 @@
     </div>
 
     <section>
-
-      {{>cartGoodsitem goodsBlock=goodsBlock name=name description=description
-      price=price title=title value=value amount=amount buttons=buttons isPrimary=isPrimary isDanger=isDanger}}
-
+      {{#each goodsBlock}}
+      {{>cartGoodsitem goodsBlock=goodsBlock}}
+      {{/each}}
     </section>
 
 
