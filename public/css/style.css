@@ -1,0 +1,69 @@
+:root{
+  background: pink;
+}
+html {
+  max-width: 1000px;
+  background: blue;
+}
+body{
+  margin: 32px;
+  background: #fff;
+  background: rgb(0, 255, 128);
+}
+
+
+* {
+ 
+  color: red;
+}
+h1{
+  color: rgb(128, 0, 79);
+}
+
+.box{
+  background: #b0adad;
+}
+
+#user{
+  color: blueviolet;
+}
+
+h1, h2#user, button.button#button {
+  color: green;
+}
+
+h1.button{
+  background: red;
+  color: black;
+}
+#user, .user{
+  color: blueviolet;
+}
+
+#box > p {
+  color: aqua;
+}
+
+footer >.user {
+  color: palevioletred;
+}
+footer >h1 {
+  color: palevioletred;
+}
+
+/* можна вказати для вкладених тегів/селекторів */
+footer em.child,
+footer div.child,
+footer .child {
+  color: rgb(211, 216, 112);
+}
+
+/* надати властивості тегу p після h1  */
+h1+p {
+  background:black ;
+}
+
+h1~p,
+h1 ~ * > p {
+  background: black;
+}
