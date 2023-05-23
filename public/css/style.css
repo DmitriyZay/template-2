@@ -1,4 +1,6 @@
-:root{
+/* ==================урок css селектори ч.1 ==================== */
+
+/* :root{
   background: pink;
 }
 html {
@@ -52,18 +54,124 @@ footer >h1 {
 }
 
 /* можна вказати для вкладених тегів/селекторів */
-footer em.child,
+/* footer em.child,
 footer div.child,
 footer .child {
   color: rgb(211, 216, 112);
 }
 
 /* надати властивості тегу p після h1  */
-h1+p {
+/* h1+p {
   background:black ;
 }
 
 h1~p,
 h1 ~ * > p {
   background: black;
+}  */
+
+
+/* ==================урок css селектори ч.2 ==================== */
+.card-dark{
+  background: rgb(254, 251, 251);
+}
+.item{
+  color: green;
+}
+/* .item:first-child{
+  color: blue;
+} */
+
+/* .item:last-child{
+  color: rgb(255, 0, 179);
+} */
+
+.item:only-child{
+  color: darkorange;
+}
+/* .item:first-of-type{
+  color: rgb(0, 179, 255);
+} */
+
+.item:last-of-type{
+  color: rgb(0, 179, 255);
+}
+.item:only-of-type{
+    color: brown;
+    
+}
+
+/* .item:nth-child(3n-2){
+  color: blueviolet;
+  font-size: 22px;
+} */
+/* .item:nth-last-child(3n-2){
+  color: blueviolet;
+  font-size: 22px;
+} */
+/* 
+.item:nth-of-type(2n){
+  color: blueviolet;
+  font-size: 22px;
+} */
+
+ /* p:not(.item){
+  color:blueviolet;
+  text-decoration: underline;
+ }  */
+ p:empty{
+  height: 10px;
+  background: red;
+ }
+
+ .input-dark {
+  background: #9f9b9b;
+ }
+ .input-dark[required] {
+  background: red;
+ }
+ .input-dark[type='number'] {
+  background: #b3ff00;
+ }
+ /* .small-img[alt~='small']{
+  height: 500px;
+ } */
+.small-img[alt~='small']{
+  height:500px
+}
+a[rel~='external']{
+  color: #16b338;
+}
+button[class|='btn']{
+  background: rgb(249, 113, 113);
+}
+/* a[class^='btn']{
+  background: rgb(249, 113, 244);
+} */
+a[class*='btn']{
+  background: rgb(249, 113, 244);
+}
+
+a[class$='big']{
+  background: rgb(99, 162, 235);
+}
+.btn::first-letter{
+  color: red;
+}
+.big-text::first-line{
+  color: red;
+}
+.input-dark::placeholder{
+  color: rgb(227, 178, 4);
+  background: blue;
+}
+.big-text::before{
+  content: '$$$';
+  color: #16b338;
+  background: yellow;
+}
+.big-text::after{
+  content: '$$$';
+  color: #e50404;
+  background: yellow;
 }
