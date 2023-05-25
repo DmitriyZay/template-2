@@ -175,3 +175,82 @@ a[class$='big']{
   color: #e50404;
   background: yellow;
 }
+/* #test:target{
+color: red;
+} */
+.link:link{
+  color: red;
+}
+.link:hover{
+  color: green;
+}
+/* .card:hover{
+  background: green;
+} */
+.link:active{
+  color: purple;
+}
+.card:active{
+  background: purple;
+}
+input{
+  background-color: gray;
+}
+input:focus{
+  background-color: red;
+}
+.card:focus-within{
+  background: red;
+}
+
+.card:lang(en) > span::after{
+  content: '  (en)';
+}
+button{
+  background-color: greenyellow;
+}
+button:enabled{
+  background-color: #16b338;
+}
+button:disabled{
+  background-color: aqua;
+  color: #9f9b9b;
+}
+
+.inp:read-write{
+  background-color: blue;
+}
+.inp:read-only{
+  background-color: rgb(255, 0, 183);
+}
+input[type='checkbox']~span{
+  background: red;
+}
+input[type='checkbox']:checked~span{
+  background: rgb(0, 255, 102);
+}
+.valid:valid{
+  background: yellow;
+}
+.valid:invalid{
+  background: rgb(255, 140, 0);
+}
+.valid:optional{
+  background: rgb(0, 255, 0);
+}
+.number:focus{
+  background: gray;
+}
+.number:out-of-range{
+  background: red;
+}
+.number:in-range{
+  background: rgb(0, 255, 0);
+}
+.number:invalid{
+  background: yellow;
+}
+input:placeholder-shown ~span{
+  background: palevioletred;
+}
+
