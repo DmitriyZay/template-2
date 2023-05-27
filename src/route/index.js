@@ -63,7 +63,17 @@ router.get('/pagecss', function (req, res) {
 
   //            ↙ cюди вводимо назву файлу з сontainer
   res.render('pagecss', {
-    layout:'bootstrap',
+    layout:'forcss',
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
+//           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/selector', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('selector', {
+    layout:'selector',
   })
   //                  ↑↑ сюди вводимо JSON дані
 })
