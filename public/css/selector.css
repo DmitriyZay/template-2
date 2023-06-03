@@ -1,6 +1,4 @@
-.card{
 
-}
 .card>p{
     color: green;
     -webkit-text-fill-color: red;
@@ -22,20 +20,80 @@ p{
   text-align: justify;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  text-decoration:underline dotted red;
+  
  
 
 }
 p:hover{
 	text-decoration-line: underline;
 	text-decoration-style: wavy;
+	text-decoration-color: blue;
+	
 }
 span{
   text-align: left;
   text-transform: capitalize;
+  text-decoration:underline dotted red;
 }
 pre{
-	tab-size: 220px;
+	tab-size: 50px;
+	color: blue;
 	
 }
+*{
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 900;
+	font-display: swap; /* для оптимізації часу відображення шрифтів при завантаженні*/
+}
+span{
+	font-size: larger;
+	font-weight: lighter;
+	/* font-style: oblique; */
+	color: blueviolet;
+	
+}
+p {
+	font-stretch: expanded;
+	
+}
+.advanced{
+	accent-color: red;
+}
+.advanced-text{
+	text-emphasis: filled red;
+	font-size: smaller;
+	font-weight: 400;
+	writing-mode: vertical-rl;
+	text-orientation: sideways;
+	font-stretch: ultra-expanded;
+	
+}
+q {
+	quotes: "«" "»";
+}
+div.cyfra {
+	font-weight: 400;
+	font-variant-position:super;
+	font-variant-numeric: oldstyle-nums;
+	color: blue;
+}
+.test{
+	display: none;
+}
+.block{
+	display: inline-block;
+	background: rgb(228, 167, 167);
+	margin: auto;
+	width:100%;
+	/* min-width: min-content; */
+	max-width: 600px;
+	
+	/* height: auto; */
+	/* min-height: 100px;
+	max-height: max-content; */
+	padding: 15px;
+	
+}
+
 
