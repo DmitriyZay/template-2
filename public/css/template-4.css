@@ -139,24 +139,34 @@
   align-items:flex-start;
   text-align:left;
   gap: var(--space-l);
-  width: 330px;
-  height: 290px;
-   
+  width: 100%;
+  min-height: 272px; 
+  
+ 
   }
+
+
   .card_image{
 	  height: 64px;
 	  width: 64px;
 	  border-radius: var(--border-radius);
+	
+	 
+	  
+	  
   }
   .card_title{
 	  font-size: 32px;
 	  font-weight: var(--weight-title);
 	  color: var(--color-title);
+	 
   }
   .card_text{
 	  font-weight: var(--weight-text);
 	  font-size: var(--size-d);
 	  color: var(--color-text);
+	
+
   }
   
   .button{
@@ -165,6 +175,8 @@
 	  text-decoration: none;
 	  padding: var(--space-m) var(--space-xm);
 	  border-radius:  var(--border-radius) ;
+	
+	  
 	 
   }
   .card_button{
