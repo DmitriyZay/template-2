@@ -228,7 +228,8 @@
 
 .badge_expirience {
   position: absolute;
-   right: 29%;
+   right: 0;
+   top: 0;
   
  
   width: 90px;
@@ -248,6 +249,7 @@
   background-color: var(--color-fill);
   padding: var(--size-b);
   border-radius: var(--border-radius-s);
+  position: relative;
  
 }
 .expirience_title {
