@@ -16,6 +16,7 @@
 
 
 {{#with hero}}
+<div class="hero_container">
 <div class="hero">
 	<div class="hero_content">
 		<h1 class="hero_title">{{title}}</h1>
@@ -27,19 +28,19 @@
 		<div class="hero_slider_icon hero_slidr_right">{{right}}</div>
 	</div>
 </div>
-{{/with}}
-<input type="text" class="input">
+</div>
 
-<div class="modal">
+{{/with}}
+{{!-- <input type="text" class="input"> --}}
+
+{{!-- <div class="modal">
 	{{hero.text}}
-	{{!-- <img class="modal_image" src="{{hero.photo}}" alt="Hero image"> --}}
+	<img class="modal_image" src="{{hero.photo}}" alt="Hero image">
 	<div class="modal_text">
 		{{hero.text}}
 		{{hero.text}}
 	</div>
-
-
-</div>
+</div> --}}
 
 <main class="blog">
 	{{#each blog}}
@@ -61,7 +62,7 @@
 <div class="form">
 	<div class="form_content">
 		<h3 class="form_title">{{title}}</h3>
-		<p class="form_info">{{info}}</p>
+		<p class="form_info">{{info}}<span class="ex">x</span></p>
 	</div>
 	<div class="form_action">
 		<a href="{{href}}" class="button form_button">{{button}}</a>
@@ -84,5 +85,5 @@
 		{{>nav_template list=links isVertical=true}}
 	</div>
 	{{/each}}
-
 </footer>
+<div class="test">Test</div>
