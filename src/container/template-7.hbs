@@ -1,0 +1,94 @@
+<div class="page">
+	<div class="page_section">
+		<div class="page_content">
+			{{#with header}}
+			<div>
+				<header class="header">
+					<div class="logo"><span>{{brandName}}</span></div>
+					{{>nav_link data=links }}
+
+				</header>
+
+				<section class="ad_section">
+					<div>
+						<span class="ad_header">Ad</span>
+						<a href="{{ad.url}}" class="header_link click">{{ad.text}} test</a>
+					</div>
+
+					<div class="ad_user">
+						<span>Users online: {{userOnline}}</span>
+					</div>
+
+				</section>
+
+
+
+				{{/with}}
+			</div>
+
+
+			{{#with hero}}
+			<section class="main">
+				<h1 class="hero_title">{{title}}</h1>
+				<p class="hero_text">{{description}}</p>
+				<button>
+					<a href="{{button.url}}" class="click bottom">{{button.text}}</a>
+				</button>
+
+			</section>
+			{{/with}}
+
+			{{#with about}}
+
+			<section class="section">
+
+				<h2 class="section_title">{{heading}}</h2>
+				<p class="section_text">{{info}}</p>
+			</section>
+			{{/with}}
+
+			<div class="page_artical">
+				<div class="section_artical">
+					<div class="artical_head">
+						<h3 class="artical_title">Our Articles</h3>
+						<div class="artical_link">
+							<a href="#" class="click article_bottom">View All</a>
+						</div>
+					</div>
+					<div class="articles_example">
+						{{#each articles}}
+						<div class="artical_card">
+
+							<img src="{{photo}}" alt="" class="artical_image">
+							<span class="{{#if isNew }} hot {{else}} hid {{/if}}"> NEW</span>
+
+
+							{{!-- <div class="image" style="background-image: url({{photo}});"> </div> --}}
+							<h3 class="article_exampl_title">{{name}}</h3>
+							<p class="article_text">{{description}}</p>
+							<div>
+								<a href="#" class="click bottom ">Read All</a>
+							</div>
+
+
+						</div>
+						{{/each}}
+					</div>
+				</div>
+			</div>
+
+
+			{{#with footer}}
+			<footer class="page_footer">
+
+				{{>nav_footer data=pages }}
+
+				<p class="copyright">{{copyright}}</p>
+			</footer>
+			{{/with}}
+		</div>
+	</div>
+
+
+
+</div>
